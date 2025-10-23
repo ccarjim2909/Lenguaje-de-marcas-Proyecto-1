@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto</title>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>Tardeos de cafe</h1>
+
+        <p>Tu rincón de sabor y charlita</p>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="./html/servicios.html">Menu</a></li>
+                <li><a href="./html/about.html">Nosotros</a></li>
+                <li><a href="./html/blog.html">Blog</a></li>
+                <li><a href="./html/contacto.html">Contacto</a></li>
+                <li><a href="./html/galeria.html">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <h2>Contáctanos</h2>
+        <p>
+        ¿Tienes alguna duda, sugerencia o quieres reservar para un evento?  
+        En Tardeos de cafe estaremos encantados de escucharte.  
+        Rellena el siguiente formulario y te responderemos lo antes posible.
+        </p>
+
+        <!-- FORMULARIO DE CONTACTO -->
+        <section>
+            <h3>Formulario de contacto</h3>
+
+            <form name="formulario" method="post" action="/send/">
+                <fieldset>
+                <legend>Datos personales</legend>
+
+                <p>
+                    Nombre completo<br>
+                    <input type="text" name="nombre" placeholder="Tu nombre completo">
+                </p>
+
+                <p>
+                    Correo electronico<br>
+                    <input type="email" name="email" placeholder="nombre@ejemplo.com">
+                </p>
+
+                <p>
+                    Teléfono de contacto<br>
+                    <input type="tel" name="telefono" placeholder="Ej: 612345678">
+                </p>
+                </fieldset>
+
+                <fieldset>
+                <legend>Motivo del contacto</legend>
+
+                <p>
+                    Motivo<br>
+                    <select>
+                    <option value="">Selecciona una opcion</option>
+                    <option value="reserva">Reserva de mesa o evento</option>
+                    <option value="sugerencia">Sugerencia o comentario</option>
+                    <option value="empleo">Ofertas de empleo</option>
+                    <option value="proveedor">Proveedores y colaboraciones</option>
+                    </select>
+                </p>
+
+                <p>
+                    Fecha (si es para una reserva)<br>
+                    <input type="date" name="fecha">
+                </p>
+
+                <p>
+                    Mensaje<br>
+                    <textarea name="mensaje" placeholder="Escribe tu mensaje aquí..."></textarea>
+                </p>
+                </fieldset>
+
+                <fieldset>
+                <legend>Confirmación</legend>
+
+                <p>
+                    <input type="checkbox" name="privacidad">
+                    Acepto la <a href="politica.html">politica de privacidad</a>
+                </p>
+
+                <p>
+                    <input type="submit" value="Enviar mensaje">
+                    <input type="reset" value="Limpiar formulario">
+                </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <article aria-labelledby="info-contacto">
+            <h3 id="info-contacto">También puedes visitarnos</h3>
+
+            <address>
+                <p>Tardeos de Cafe</p>
+                <p>Avenida Ronda del estero 59, 11100 San fernando</p>
+                <p>Telefono: <a href="">956 123 456</a></p>
+                <p>Correo: <a href="">info@cafebahia.com</a></p>
+            </address>
+
+            <figure>
+                <img src="../assets/images/cafe_fuera.png" alt="Vista del exterior del Cafe">
+                <figcaption>Nuestro local frente al mar.</figcaption>
+            </figure>
+        </article>
+    </main>
+
+
+    <footer>
+        <section>
+            <h2>Horario</h2>
+            <p>
+                Lunes a viernes: 8:00 – 20:00<br>
+                Sábado y domingo: 9:00 – 22:00
+            </p>
+        </section>
+
+        <p>&copy; 2025 Tardeos de cafe. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
