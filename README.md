@@ -48,17 +48,37 @@ A continuación se detalla el contenido de cada una:
 ---
 
 ### 📖 `about.html` – Página “Nosotros” *(pendiente de completar)*  
-🕓 ** **
+- Expone la historia y filosofía del negocio bajo el título *“Nuestra historia”*.  
+- Presenta los orígenes del local: nació en 2023 con la idea de ofrecer un lugar donde disfrutar del café de forma sostenible.  
+- Incluye imágenes de la cafetería con vistas de Cádiz y una tabla con los horarios de apertura.  
+- Sección dedicada a la **filosofía** del local, centrada en la cercanía, el cuidado de los detalles y la sostenibilidad.  
+- Apartado final con el **equipo humano**, destacando a:  
+  - *Cristian Carrasco*, barista ayudante.  
+  - *María I. Jiménez*, fundadora y barista principal con más de 10 años de experiencia.  
 
 ---
 
 ### 🍰 `servicios.html` – Página “Menú” *(pendiente de completar)*  
-🕓 ** **
+- Presenta los servicios que ofrece la cafetería más allá del café tradicional.  
+- Se divide en dos bloques principales:  
+  1. **Cafetería y desayunos**  
+     - *Desayunos completos* con bollería artesanal y productos locales.  
+     - *Cafés fríos y especiales*, como el café bombón o el café helado con leche.  
+  2. **Más que una cafetería**  
+     - *Zona Wi-Fi y trabajo*: espacio con conexión rápida y enchufes para estudiar o trabajar.  
+     - *Eventos y catas*: degustaciones, pequeños conciertos acústicos y talleres de café.  
+     - *Pedidos para llevar*: todos los productos disponibles en envases sostenibles y biodegradables.  
+- Se incluyen imágenes y descripciones (`figcaption`) en cada artículo para reforzar el contenido visual.  
 
 ---
 
 ### ✍️ `blog.html` – Página “Blog” *(pendiente de completar)*  
-🕓 ** **
+- Espacio dedicado a compartir anécdotas, noticias y momentos especiales del día a día en la cafetería.  
+- Contiene tres artículos destacados:  
+  1. **Visita sorpresa de la cantante Emily Armstrong** – relato de una actuación improvisada en la terraza del local.  
+  2. **El día que se nos inundó la terraza** – historia divertida sobre una tormenta inesperada que terminó en risas y música.  
+  3. **Concurso de postres caseros** – crónica del primer concurso organizado en el local, donde la “abuela de Antonio” fue la ganadora con su tarta de almendra y limón.  
+- Cada publicación incluye título, fecha, autor, imagen ilustrativa y texto con tono cercano y ameno.  
 
 ---
 
