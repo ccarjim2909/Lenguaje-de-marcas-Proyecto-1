@@ -1,131 +1,163 @@
-<!DOCTYPe html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Contacto</title>
+    <title>Contacto – Tardeos de Café</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+<body class="pagina">
 
-<body>
 
-    <header>
-        <h1>Tardeos de cafe</h1>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Tardeos de Café</h1>
+        <p class="encabezado__subtitulo">Tu rincón de sabor y charlita</p>
 
-        <p>Tu rincon de sabor y charlita</p>
-
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./servicios.html">Menu</a></li>
-                <li><a href="./about.html">Nosotros</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./index.html" >Inicio</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./servicios.html">Menú</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./about.html">Nosotros</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./blog.html">Blog</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./contacto.html">Contacto</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./galeria.html">Galería</a></li>
             </ul>
         </nav>
     </header>
 
-    
-    <main>
-        <h2>Contactanos</h2>
-        <p>
-            ¿Tienes alguna duda, sugerencia o quieres reservar para un evento?  
-            en Tardeos de cafe estaremos encantados de escucharte.  
-            Rellena el siguiente formulario y te responderemos lo antes posible.
-        </p>
 
-        <section>
-            <h3>Formulario de contacto</h3>
+    <main class="contacto">
 
-            <form name="formulario" method="post" action="/send/">
-                <fieldset>
-                <legend>Datos personales</legend>
 
-                <p>
-                    Nombre completo<br>
-                    <input type="text" name="nombre" placeholder="Tu nombre completo">
-                </p>
+        <header class="contacto__intro">
+            <h2 class="contacto__titulo">Contáctanos</h2>
+            <p class="contacto__descripcion">
+                ¿Tienes dudas, sugerencias o quieres reservar?  
+                Escríbenos y te responderemos lo antes posible.
+            </p>
+        </header>
 
-                <p>
-                    Correo electronico<br>
-                    <input type="email" name="email" placeholder="nombre@ejemplo.com">
-                </p>
 
-                <p>
-                    Teléfono de contacto<br>
-                    <input type="tel" name="telefono" placeholder="ej: 612345678">
-                </p>
+        <section class="contacto__formulario">
+
+            <form name="formulario" method="post" action="/send/" class="formulario">
+
+
+                <fieldset class="formulario__fieldset">
+                    <legend class="formulario__leyenda">Datos personales</legend>
+
+                    <p class="formulario__grupo">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre"
+                               class="formulario__input" placeholder="Tu nombre completo">
+                    </p>
+
+                    <p class="formulario__grupo">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email"
+                               class="formulario__input" placeholder="nombre@ejemplo.com">
+                    </p>
+
+                    <p class="formulario__grupo">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono"
+                               class="formulario__input" placeholder="ej: 612345678">
+                    </p>
                 </fieldset>
 
-                <fieldset>
-                <legend>Motivo del contacto</legend>
 
-                <p>
-                    Motivo<br>
-                    <select>
-                    <option value="">Selecciona una opcion</option>
-                    <option value="reserva">Reserva de mesa o evento</option>
-                    <option value="sugerencia">Sugerencia o comentario</option>
-                    <option value="empleo">Ofertas de empleo</option>
-                    <option value="proveedor">Proveedores y colaboraciones</option>
-                    </select>
-                </p>
+                <fieldset class="formulario__fieldset">
+                    <legend class="formulario__leyenda">Motivo del contacto</legend>
 
-                <p>
-                    Fecha (si es para una reserva)<br>
-                    <input type="date" name="fecha">
-                </p>
+                    <p class="formulario__grupo">
+                        <label for="motivo">Motivo</label>
+                        <select id="motivo" name="motivo" class="formulario__input">
+                            <option value="">Selecciona una opción</option>
+                            <option value="reserva">Reserva de mesa o evento</option>
+                            <option value="sugerencia">Sugerencia o comentario</option>
+                            <option value="empleo">Empleo</option>
+                            <option value="proveedor">Proveedores</option>
+                        </select>
+                    </p>
 
-                <p>
-                    Mensaje<br>
-                    <textarea name="mensaje" placeholder="escribe tu mensaje aqui..."></textarea>
-                </p>
+                    <p class="formulario__grupo">
+                        <label for="fecha">Fecha (si es una reserva)</label>
+                        <input type="date" id="fecha" name="fecha" class="formulario__input">
+                    </p>
+
+                    <p class="formulario__grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" class="formulario__input"
+                                  placeholder="Escribe tu mensaje..."></textarea>
+                    </p>
                 </fieldset>
 
-                <fieldset>
-                <legend>Confirmacion</legend>
 
-                <p>
-                    <input type="checkbox" name="privacidad">
-                    Acepto la <a href="politica.html">politica de privacidad</a>
-                </p>
+                <fieldset class="formulario__fieldset">
+                    <legend class="formulario__leyenda">Confirmación</legend>
 
-                <p>
-                    <input type="submit" value="enviar mensaje">
-                    <input type="reset" value="Limpiar formulario">
-                </p>
+                    <p class="formulario__grupo formulario__grupo--checkbox">
+                        <input type="checkbox" id="privacidad" name="privacidad">
+                        <label for="privacidad">Acepto la <a href="politica.html">política de privacidad</a></label>
+                    </p>
+
+                    <p class="formulario__botones">
+                        <input type="submit" value="Enviar mensaje" class="boton boton--primario">
+                        <input type="reset" value="Limpiar" class="boton boton--secundario">
+                    </p>
                 </fieldset>
+
             </form>
         </section>
 
-        <article aria-labelledby="info-contacto">
-            <h3 id="info-contacto">También puedes visitarnos</h3>
 
-            <address>
-                <p>Tardeos de Cafe</p>
-                <p>Avenida Ronda del estero 59, 11100 San fernando</p>
-                <p>Telefono: <a href="">956 123 456</a></p>
-                <p>Correo: <a href="">tardeosdecafe@gmail.es</a></p>
-            </address>
+        <article class="contacto__extra">
+            
+            <header class="contacto__extra-cabecera">
+                <h3 class="contacto__extra-titulo">También puedes visitarnos</h3>
+            </header>
 
-            <figure>
-                <img src="../assets/images/cafe_fuera.png" alt="Vista del exterior del Cafe">
-                <figcaption>Nuestro local frente al mar.</figcaption>
-            </figure>
+            <section class="contacto__info rejilla-2">
+                <section class="contacto__direccion">
+                    <address class="contacto__address">
+                        <p><strong>Tardeos de Café</strong></p>
+                        <p>Avenida Ronda del Estero 59, 11100 San Fernando</p>
+                        <p>Teléfono: <a href="tel:+34956123456">956 123 456</a></p>
+                        <p>Correo: <a href="mailto:tardeosdecafe@gmail.es">tardeosdecafe@gmail.es</a></p>
+                    </address>
+                </section>
+
+                <figure class="contacto__figure">
+                    <img src="./assets/images/cafe_fuera.png" alt="Vista del exterior"
+                         class="contacto__imagen">
+                    <figcaption class="contacto__leyenda">Nuestro local frente al mar.</figcaption>
+                </figure>
+            </section>
+
         </article>
+
     </main>
 
 
-    <footer>
-        <section>
-            <h2>Horario</h2>
-            <p>
-                Lunes a viernes: 8:00 – 20:00<br>
-                Sabado y domingo: 9:00 – 22:00
-            </p>
+    <footer class="pie">
+        <section class="pie__contenedor">
+            <section class="pie__bloque pie__bloque--izquierda">
+                <h2 class="pie__titulo">Horario</h2>
+                <p class="pie__texto">L–V: 8:00 – 20:00<br>S–D: 9:00 – 22:00</p>
+            </section>
+
+            <section class="pie__bloque pie__bloque--derecha">
+                <h2 class="pie__titulo">Contacto</h2>
+                <address class="pie__direccion">
+                    Ronda del Estero 59<br>
+                    San Fernando<br>
+                    Tel: +34 956 123 456<br>
+                    Email: tardeosdecafe@gmail.es
+                </address>
+            </section>
         </section>
 
-        <p>&copy; 2025 Tardeos de cafe. Todos los derechos reservados.</p>
+        <p class="pie__copy">&copy; 2025 Tardeos de Café — Todos los derechos reservados.</p>
     </footer>
 
 </body>
