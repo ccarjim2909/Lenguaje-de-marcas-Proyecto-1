@@ -2,62 +2,65 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Sobre nosotros</title>
+    <title>Sobre nosotros – Tardeos de Café</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
+<body class="pagina">
 
-<body>
 
-    <header>
-        <h1>Tardeos de cafe</h1>
-
-        <p>Tu rincon de sabor y charlita</p>
-
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./servicios.html">Menu</a></li>
-                <li><a href="./about.html">Nosotros</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./galeria.html">Galeria</a></li>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Tardeos de Café</h1>
+        <p class="encabezado__subtitulo">Tu rincón de sabor y charlita</p>
+        <nav class="navegacion">
+            <ul class="navegacion__lista">
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./index.html">Inicio</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./servicios.html">Menú</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./about.html">Nosotros</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./blog.html">Blog</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./contacto.html">Contacto</a></li>
+                <li class="navegacion__item"><a class="navegacion__enlace" href="./galeria.html">Galería</a></li>
             </ul>
         </nav>
     </header>
 
 
-    <main>
-        <h2>Nuestra historia</h2>
+    <main class="sobre">
+        <section class="sobre__bloque">
+            <header class="sobre__cabecera">
+                <h2 class="sobre__titulo">Nuestra historia</h2>
+            </header>
 
-        <section>
-            <h3>De Andalucia para Andalucia</h3>
-            <p>
-                Tardeos de cafe nacio en 2023, con una idea sencilla: 
-                ofrecer un lugar donde disfrutar de un buen cafe.  
-                Desde nuestros comienzos, apostamos por cafes de origen sostenible y productos locales.
-            </p>
+            <article class="sobre__info">
+                <h3 class="sobre__subtitulo">De Andalucía para Andalucía</h3>
 
-            <figure>
-                <img src="../assets/images/cafe_fuera.png" alt="Fachada de Tardeos de cafe frente a las vistas de Cadiz">
-                <figcaption>Nuestra cafeteria con vistas de Cadiz.</figcaption>
-            </figure>
+                <p class="sobre__texto">
+                    Tardeos de Café nació en 2023, con una idea sencilla: ofrecer un lugar donde disfrutar de un buen café.  
+                    Desde nuestros comienzos, apostamos por cafés de origen sostenible y productos locales.
+                </p>
+
+                <figure class="sobre__figure">
+                    <img class="sobre__imagen" src="./assets/images/cafe_fuera.png" alt="Fachada de Tardeos de Café en Cádiz">
+                    <figcaption class="sobre__descripcion">Nuestra cafetería con vistas de Cádiz.</figcaption>
+                </figure>
+            </article>
         </section>
 
-        <section>
-            <h3>Nuestra filosofia</h3>
+        <section class="sobre__bloque">
+            <h3 class="sobre__subtitulo">Nuestra filosofía</h3>
 
-            <p>
-                Creemos que el cafe no solo se bebe, se comparte.  
-                Por eso cuidamos cada detalle: el tueste, el aroma, la musica y el trato cercano.  
-                Nos esforzamos por mantener un ambiente acogedor y responsable con el entorno.
+            <p class="sobre__texto">
+                Creemos que el café no solo se bebe, se comparte.  
+                Por eso cuidamos cada detalle: el tueste, el aroma, la música y el trato cercano.  
+                Buscamos mantener un ambiente acogedor y responsable con el entorno.
             </p>
 
-            <table>
-                <caption>Horarios de apertura</caption>
+            <table class="sobre__tabla">
+                <caption class="sobre__tabla-caption">Horarios de apertura</caption>
 
                 <thead>
                     <tr>
-                        <th>Dia</th>
+                        <th>Día</th>
                         <th>Horario</th>
                     </tr>
                 </thead>
@@ -68,48 +71,57 @@
                         <td>08:00 - 20:00</td>
                     </tr>
                     <tr>
-                        <td>Sabados y domingos</td>
+                        <td>Sábados y domingos</td>
                         <td>09:00 - 22:00</td>
                     </tr>
                 </tbody>
             </table>
         </section>
 
-        <section>
-            <h3>Nuestro equipo</h3>
+        <section class="sobre__bloque">
+            <h3 class="sobre__subtitulo">Nuestro equipo</h3>
 
-            <article>
-                <h4>Cristian Carrasco — Barista ayudante</h4>
-
-                <p>
-                Es el corazon de nuestra barra. 
-                Cada cafe que prepara tiene su toque personal.
+            <article class="sobre__persona">
+                <h4 class="sobre__persona-nombre">Cristian Carrasco — Barista ayudante</h4>
+                <p class="sobre__texto">
+                    Es el corazón de nuestra barra. Cada café que prepara tiene su toque personal.
                 </p>
             </article>
 
-            <article>
-                <h4>Maria I. Jimenez — Fundadora y barista principal</h4>
-
-                <p>
-                Con mas de 10 años de experiencia, Amante del mar y del cafe.
+            <article class="sobre__persona">
+                <h4 class="sobre__persona-nombre">María I. Jiménez — Fundadora y barista principal</h4>
+                <p class="sobre__texto">
+                    Con más de 10 años de experiencia. Amante del mar y del café.
                 </p>
             </article>
         </section>
+
     </main>
 
 
-    <footer>
-        <section>
-            <h2>Informacion de contacto</h2>
-            <address>
-                Ronda del estero, San fernando<br>
-                Tel: <a href="">+34 956 123 456</a><br>
-                Email: <a href="">tardeosdecafe@gmail.es</a>
-            </address>
+    <footer class="pie">
+        <section class="pie__contenedor">
+            <section class="pie__bloque pie__bloque--izquierda">
+                <h2 class="pie__titulo">Contacto</h2>
+                <address class="pie__direccion">
+                    Ronda del Estero, San Fernando<br>
+                    Tel: <a class="pie__enlace" href="">+34 956 123 456</a><br>
+                    Email: <a class="pie__enlace" href="">tardeosdecafe@gmail.es</a>
+                </address>
+            </section>
+
+            <section class="pie__bloque pie__bloque--derecha">
+                <h2 class="pie__titulo">Horario</h2>
+                <p class="pie__texto">
+                    L–V: 8:00 – 20:00<br>
+                    S–D: 9:00 – 22:00
+                </p>
+            </section>
         </section>
 
-        <p>&copy; 2025 Tardeos de cafe. Todos los derechos reservados.</p>
+        <p class="pie__copy">&copy; 2025 Tardeos de Café — Todos los derechos reservados.</p>
     </footer>
+
 
 </body>
 </html>
