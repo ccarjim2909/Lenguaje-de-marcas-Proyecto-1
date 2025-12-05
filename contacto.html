@@ -49,13 +49,13 @@
                     <p class="formulario__grupo">
                         <label for="nombre">Nombre completo</label>
                         <input type="text" id="nombre" name="nombre"
-                               class="formulario__input" placeholder="Tu nombre completo">
+                               class="formulario__input" placeholder="Tu nombre completo" required>
                     </p>
 
                     <p class="formulario__grupo">
                         <label for="email">Correo electrónico</label>
                         <input type="email" id="email" name="email"
-                               class="formulario__input" placeholder="nombre@ejemplo.com">
+                               class="formulario__input" placeholder="nombre@ejemplo.com" required>
                     </p>
 
                     <p class="formulario__grupo">
@@ -71,7 +71,7 @@
 
                     <p class="formulario__grupo">
                         <label for="motivo">Motivo</label>
-                        <select id="motivo" name="motivo" class="formulario__input">
+                        <select id="motivo" name="motivo" class="formulario__input" required>
                             <option value="">Selecciona una opción</option>
                             <option value="reserva">Reserva de mesa o evento</option>
                             <option value="sugerencia">Sugerencia o comentario</option>
@@ -88,7 +88,7 @@
                     <p class="formulario__grupo">
                         <label for="mensaje">Mensaje</label>
                         <textarea id="mensaje" name="mensaje" class="formulario__input"
-                                  placeholder="Escribe tu mensaje..."></textarea>
+                                  placeholder="Escribe tu mensaje..." required></textarea>
                     </p>
                 </fieldset>
 
@@ -97,7 +97,7 @@
                     <legend class="formulario__leyenda">Confirmación</legend>
 
                     <p class="formulario__grupo formulario__grupo--checkbox">
-                        <input type="checkbox" id="privacidad" name="privacidad">
+                        <input type="checkbox" id="privacidad" name="privacidad" required>
                         <label for="privacidad">Acepto la <a href="politica.html">política de privacidad</a></label>
                     </p>
 
@@ -164,4 +164,5 @@
 
 </body>
 </html>
+
 
