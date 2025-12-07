@@ -108,6 +108,65 @@ A continuación se detalla el contenido de cada una:
 
 ---
 
+🎨 Informe de Estilos CSS3 y Validación Final (Fase 2)
+------------------------------------------------------
+
+El proyecto "Tardeos de Café" ha pasado de ser una estructura semántica a un producto visualmente completo, funcional y adaptable, cumpliendo con todos los criterios de estilo y responsividad solicitados.
+
+### 1\. Hoja de Estilos Única y Organizada
+
+El proyecto utiliza un solo archivo, **`style.css`**, para gestionar todos los estilos del sitio, asegurando coherencia y eficiencia.
+
+-   **Organización y Estructura:** El código CSS está organizado de manera **modular** y estructurado mediante comentarios (`/* =====... */`) que dividen el archivo en secciones claras (ROOT, HEADER, FOOTER, INDEX, SERVICIOS, ABOUT, BLOG, CONTACTO, GALERÍA).
+
+-   **Variables CSS (`:root`):** Se ha implementado un sistema de variables CSS para los valores reutilizables, facilitando la gestión y el cambio de tema.
+
+    -   **Paleta de colores:** Definida con variables como `--cafe-oscuro`, `--crema`, `--texto`, etc..
+
+    -   **Tipografías:** Definidas como `--titulos` y `--texto-principal`.
+
+-   **Metodología BEM (Block Element Modifier):** Se utiliza una convención de nomenclatura clara y consistente, evidente en clases como `encabezado__titulo`, `navegacion__enlace`, `pie__bloque--izquierda`, `bienvenida__boton`, etc., lo que mejora la legibilidad y escalabilidad del CSS.
+
+### 2\. Diseño Responsive
+
+-   **Fundamentos Responsive (HTML):** Se incluyó la etiqueta esencial `<meta name="viewport" content="width=device-width, initial-scale=1.0">` en **todas las páginas** (`index.html`, `servicios.html`, `about.html`, `blog.html`, `contacto.html`, `galeria.html`).
+
+-   **Layout Flexible:** El CSS utiliza modelos de layout modernos como **Flexbox** (e.g., para `.navegacion__lista` y `.pie__contenedor`) y **CSS Grid** (e.g., para `.bienvenida`, `.blog__rejilla`, `.galeria__rejilla` y `.rejilla-2`), asegurando que el contenido se reorganice de forma flexible.
+
+-   **Contenido Multimedia:** Las imágenes (`.bienvenida__imagen img`, `.entrada__imagen`, etc.) usan `width: 100%` y `height: auto`, asegurando que el contenido multimedia se adapte correctamente al tamaño del contenedor.
+
+### 3\. Dark Mode 🌙
+
+Se ha implementado soporte completo para el modo oscuro, demostrando un enfoque moderno y accesible en la experiencia de usuario.
+
+-   **Detección de Preferencias:** Se utiliza la *media query* **`@media (prefers-color-scheme: dark)`** para detectar automáticamente la preferencia del sistema operativo del usuario.
+
+-   **Cambio de Tema con Variables:** Dentro de la media query, las variables de color (`:root`) se redefinen a una paleta monocromática oscura (`--crema: #222222;`, `--texto: #f5f5f5;`, etc.), facilitando el cambio de tema en todo el sitio de forma centralizada.
+
+### 4\. Transiciones y Animaciones
+
+Se han incorporado transiciones suaves y una animación sutil para enriquecer la interactividad sin ser intrusivo.
+
+-   **Transiciones Suaves:** Elementos interactivos como los enlaces de la navegación (`.navegacion__enlace`) utilizan la propiedad `transition` para un cambio de estado suave, incluyendo `background-color`, `transform`, y `opacity`.
+
+-   **Animación de Valor:** Se ha incluido una animación sutil en los elementos de la galería (`.galeria__item`) que aplica un `transform: scale(1.05)` al hacer `hover` sobre la imagen, proporcionando una respuesta visual clara y atractiva que aporta valor a la experiencia de usuario.
+
+-   **Movimiento Reducido:** La naturaleza de las transiciones implementadas (suaves y breves) minimiza el riesgo de fatiga visual o mareos.
+
+### 5\. Tipografía y Jerarquía Visual
+
+-   **Jerarquía Visual Consistente:** La jerarquía de encabezados (`h1` a `h4`) en el HTML se refuerza con estilos CSS claros (usando la variable `--titulos`) para diferenciar los títulos principales, subtítulos de sección y nombres de productos, como `.encabezado__titulo`, `.servicios__titulo`, y `.entrada__titulo`.
+
+-   **Legibilidad y Contraste:**
+
+    -   El contraste de color es alto, especialmente entre el color de fondo (`--crema` o `--crema-suave`) y el texto (`--texto` o `--cafe-oscuro`) en modo claro.
+
+    -   En **Modo Oscuro**, el contraste se optimiza redefiniendo el fondo a `#121212` y el texto a `#f5f5f5`, cumpliendo con los estándares de accesibilidad para la legibilidad.
+
+    -   Se utiliza `line-height: 1.6` en la mayoría de los párrafos (`.entrada__texto`, `.sobre__texto`) para optimizar la legibilidad del cuerpo de texto.
+
+---
+
 📅 **Autor:** Cristian Carretero Jiménez  
 📘 **Asignatura:** Lenguaje de Marcas – Proyecto 1  
 📍 **Año:** 2025  

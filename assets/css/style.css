@@ -286,8 +286,6 @@ body {
 }
 
 .servicios__categoria {
-    /* TRUCO: Borde del color del fondo 
-    MIRAR ESTO */
     border-bottom: 3rem solid var(--crema); 
     background: var(--crema-suave);
     padding: 2rem;
@@ -365,8 +363,6 @@ body {
     background: var(--crema-suave);
     padding: 2rem;
     border-radius: 12px;
-    /* TRUCO: Borde del color del fondo 
-    MIRAR ESTO */
     border-bottom: 2.5rem solid var(--crema);
 }
 
@@ -592,8 +588,6 @@ body {
     border-radius: 12px;
     border: none;
     margin: 0;
-    /* TRUCO: Borde del color del fondo 
-    MIRAR ESTO */
     border-bottom: 1.5rem solid var(--crema);
 }
 
@@ -707,8 +701,6 @@ body {
 }
 
 .galeria__seccion {
-    /* TRUCO: Borde del color del fondo 
-    MIRAR ESTO*/
     border-bottom: 3rem solid var(--crema);
     padding: 1.5rem;
     background: var(--crema-suave);
@@ -721,7 +713,6 @@ body {
     color: var(--cafe-medio);
     margin: 0;
     padding-bottom: 1.5rem;
-    
     border-bottom: 2px solid var(--cafe-claro); 
 }
 
@@ -760,4 +751,84 @@ body {
     padding-top: 0.8rem;
     display: block;
     color: var(--texto);
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+    
+
+    :root {
+        --cafe-oscuro: #ffffff; 
+        --cafe-medio: #b3b3b3;  
+        --cafe-claro: #444444;  
+        --crema: #222222;     
+        --crema-suave: #121212; 
+        --texto: #f5f5f5;
+        --blanco: #333333;    
+    
+
+    }
+
+
+    body {
+        background: var(--crema-suave);
+    }
+
+    .encabezado {
+        background: #080808;
+        color:var(--texto); 
+    }
+
+    .navegacion__enlace {
+        color:var(--texto);
+    }
+
+    
+    .pie {
+        background: #000;
+        color: #f5f5f5;
+    }
+    .pie__contenedor {
+        border-bottom: 1px solid #333; 
+    }
+    .pie__enlace {
+        color: var(--cafe-medio); 
+    }
+    .pie__copy {
+        color: #888;
+    }
+
+    .servicios__categoria {
+    border-bottom: 3rem solid var(--crema-suave); 
+    }
+
+    .sobre__bloque {
+    border-bottom: 2.5rem solid var(--crema-suave);
+    }
+
+    .formulario__fieldset {
+    border-bottom: 1.5rem solid var(--crema-suave);
+    }
+
+    .galeria__seccion {
+    border-bottom: 3rem solid var(--crema-suave);
+    }
+
+
+    .formulario__input {
+        background: var(--blanco); 
+        border: 1px solid #555;
+        color: var(--texto);
+    }
+    
+    .bienvenida__boton{
+        background: var(--cafe-oscuro); 
+        color: var(--crema-suave); 
+    }
+    .bienvenida__boton:hover {
+        background: var(--cafe-medio);
+        color: var(--crema-suave);
+    }
+
 }
