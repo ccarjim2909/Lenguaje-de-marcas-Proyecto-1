@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Galería – Tardeos de Café</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
 
 
@@ -35,6 +36,29 @@
                 Desde nuestras vistas al mar hasta los cafés más especiales que servimos con cariño cada día.
             </p>
         </header>
+
+        <aside class="galeria__aside">
+            <h3 class="galeria__filtro-titulo">Filtrar por categoría</h3>
+            <ul class="galeria__filtro-lista">
+                <li>
+                    <button class="galeria__filtro-boton">Todos</button>
+                </li>
+                <li>
+                    <button class="galeria__filtro-boton">El local</button>
+                </li>
+                <li class="galeria__item--con-submenu">
+                    <button class="galeria__filtro-boton">Bebidas ▾</button>
+                    <ul class="galeria__sublista">
+                        <li><button class="galeria__filtro-boton">Café</button></li>
+                        <li><button class="galeria__filtro-boton">Té</button></li>
+                        <li><button class="galeria__filtro-boton">Bebidas frías</button></li>
+                    </ul>
+                </li>
+                <li>
+                    <button class="galeria__filtro-boton">Postres</button>
+                </li>
+            </ul>
+        </aside>
 
         <section class="galeria__seccion">
             <h3 class="galeria__subtitulo">El local</h3>
