@@ -4,3 +4,7 @@ prefers color media
 css nesting nativo
 
 awwwwards nominees
+
+
+
+transition-behavior: allow-discrete;  esto seria bien meterlo con un display block o display none para la transicion
