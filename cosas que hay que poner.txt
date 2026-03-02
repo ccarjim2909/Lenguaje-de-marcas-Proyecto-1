@@ -4,10 +4,3 @@ prefers color media
 css nesting nativo
 
 awwwwards nominees
-
----NUEVO---
-
-hay que meter algo con el local storage
-
-meter un usuario ya creado para que se logee entre comillas y pueda hacer algo concreto
-que probablemente sea lo de poner una historia de esas que tengo en una parte o algo asi ya vere mas adelante

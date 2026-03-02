@@ -41,38 +41,39 @@
             <h3 class="galeria__filtro-titulo">Filtrar por categoría</h3>
             <ul class="galeria__filtro-lista">
                 <li>
-                    <button class="galeria__filtro-boton">Todos</button>
+                    <button class="galeria__filtro-boton filtro-todos">Todos</button>
                 </li>
                 <li>
-                    <button class="galeria__filtro-boton">El local</button>
+                    <button class="galeria__filtro-boton filtro-local">El local</button>
                 </li>
                 <li class="galeria__item--con-submenu">
-                    <button class="galeria__filtro-boton">Bebidas ▾</button>
+                    <button class="galeria__filtro-boton filtro-bebidas">Bebidas</button>
                     <ul class="galeria__sublista">
-                        <li><button class="galeria__filtro-boton">Café</button></li>
-                        <li><button class="galeria__filtro-boton">Té</button></li>
-                        <li><button class="galeria__filtro-boton">Bebidas frías</button></li>
+                        <li><button class="galeria__filtro-boton filtro-cafe">Café</button></li>
+                        <li><button class="galeria__filtro-boton filtro-te">Té</button></li>
+                        <li><button class="galeria__filtro-boton filtro-frias">Bebidas frías</button></li>
                     </ul>
                 </li>
                 <li>
-                    <button class="galeria__filtro-boton">Postres</button>
+                    <button class="galeria__filtro-boton filtro-postres">Postres</button>
                 </li>
             </ul>
         </aside>
+
 
         <section class="galeria__seccion">
             <h3 class="galeria__subtitulo">El local</h3>
             
             <section class="galeria__rejilla">
-                <figure class="galeria__item">
+                <figure class="galeria__item galeria__card local">
                     <img class="galeria__imagen" src="./assets/images/interior.png" alt="Interior del Tardeos de Café">
                     <figcaption class="galeria__leyenda">Interior del café.</figcaption>
                 </figure>
-                <figure class="galeria__item">
+                <figure class="galeria__item galeria__card local">
                     <img class="galeria__imagen" src="./assets/images/cafe_fuera.png" alt="Terraza del Tardeos de café frente al mar">
                     <figcaption class="galeria__leyenda">Terraza con vistas a Cádiz.</figcaption>
                 </figure>
-                <figure class="galeria__item">
+                <figure class="galeria__item galeria__card local">
                     <img class="galeria__imagen" src="./assets/images/personal.png" alt="Personal del Tardeos de café atendiendo a los clientes">
                     <figcaption class="galeria__leyenda">Nuestro equipo, siempre con una sonrisa.</figcaption>
                 </figure>
@@ -80,23 +81,82 @@
         </section>
 
         <section class="galeria__seccion">
-            <h3 class="galeria__subtitulo">Nuestros cafés y postres</h3>
+            <h3 class="galeria__subtitulo">Nuestros cafés</h3>
             
             <section class="galeria__rejilla">
-                <figure class="galeria__item">
+                <figure class="galeria__item galeria__card bebidas cafe">
                     <img class="galeria__imagen" src="./assets/images/cbombon.png" alt="Café bombón con leche y espuma">
                     <figcaption class="galeria__leyenda">El clásico café bombón.</figcaption>
                 </figure>
-                <figure class="galeria__item">
+                <figure class="galeria__item galeria__card bebidas cafe">
                     <img class="galeria__imagen" src="./assets/images/chielo.png" alt="Café frío con hielo">
                     <figcaption class="galeria__leyenda">Café frío perfecto para los días de veranito.</figcaption>
                 </figure>
-                <figure class="galeria__item">
-                    <img class="galeria__imagen" src="./assets/images/tarta.png" alt="Tarta casera de chocolate servida en una mesa">
-                    <figcaption class="galeria__leyenda">Tarta casera elaborada a diario por nuestra cocinera.</figcaption>
+                <figure class="galeria__item galeria__card bebidas cafe">
+                    <img src="https://picsum.photos/200/200" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Cafes tipicos.</figcaption>
                 </figure>
             </section>
         </section>
+
+        <section class="galeria__seccion">
+            <h3 class="galeria__subtitulo">Nuestros tés</h3>
+
+            <section class="galeria__rejilla">
+                <figure class="galeria__item galeria__card bebidas te">
+                    <img src="https://picsum.photos/200/200" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Té verde</figcaption>
+                </figure>
+                <figure class="galeria__item galeria__card bebidas te">
+                    <img src="https://picsum.photos/200/200" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Té negro</figcaption>
+                </figure>
+                <figure class="galeria__item galeria__card bebidas te">
+                    <img src="https://picsum.photos/200/200" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Té rojo</figcaption>
+                </figure>
+            </section>
+        </section>
+
+
+        <section class="galeria__seccion">
+            <h3 class="galeria__subtitulo">Nuestras bebidas frias</h3>
+
+            <section class="galeria__rejilla">
+                <figure class="galeria__item galeria__card bebidas frias">
+                    <img src="https://picsum.photos/200/200" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Refrescos (cola, limón, naranja)</figcaption>
+                </figure>
+                <figure class="galeria__item galeria__card bebidas frias">
+                    <img src="https://picsum.photos/200/200" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Batido (chocolate, fresa o vainilla)</figcaption>
+                </figure>
+                <figure class="galeria__item galeria__card bebidas frias">
+                    <img src="https://picsum.photos/200/200" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Smoothie de frutas</figcaption>
+                </figure>
+            </section>
+        </section>
+
+        <section class="galeria__seccion">
+            <h3 class="galeria__subtitulo">Postres</h3>
+
+            <section class="galeria__rejilla">
+                <figure class="galeria__item galeria__card postres">
+                    <img class="galeria__imagen" src="./assets/images/tarta.png" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Tarta casera elaborada a diario por nuestra cocinera.</figcaption>
+                </figure>
+                <figure class="galeria__item galeria__card postres">
+                    <img src="https://picsum.photos/200/200" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Tocino de cielo</figcaption>
+                </figure>
+                <figure class="galeria__item galeria__card postres">
+                    <img src="https://picsum.photos/200/200" alt="Imagen de ejemplo">
+                    <figcaption class="galeria__leyenda">Tarta de piñones</figcaption>
+                </figure>
+            </section>
+        </section>
+
     </main>
 
 
