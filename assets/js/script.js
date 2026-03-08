@@ -3,11 +3,11 @@
 /*         galeria filtro        */   /*nuevo*/
 /* ============================= */
 
-// Guardamos todos los botones de filtro
+
 var botonesFiltro = document.querySelectorAll(".galeria__filtro-boton");
-// Guardamos todas las cards
+
 var todasLasCards = document.querySelectorAll(".galeria__card");
-// Guardamos todas las secciones
+
 var todasLasSecciones = document.querySelectorAll(".galeria__seccion");
 
 // Recorremos cada botón
@@ -18,8 +18,8 @@ for (var i = 0; i < botonesFiltro.length; i++) {
     boton.addEventListener("click", function() {
 
         // Quitamos clase activo de todos los botones
-        for (var btn of botonesFiltro) {
-            btn.classList.remove("galeria__filtro-boton--activo");
+        for (var boton of botonesFiltro) {
+            boton.classList.remove("galeria__filtro-boton--activo");
         }
 
         // Ponemos clase activo al botón que se clicó
@@ -66,7 +66,7 @@ for (var i = 0; i < botonesFiltro.length; i++) {
         // Recorremos todas las secciones para ocultar las que no tengan cards visibles
         for (var seccion of todasLasSecciones) {
             // Buscamos las cards visibles dentro de esta sección
-            var cardsVisibles = seccion.querySelectorAll(".galeria__card:not(.galeria__card--oculta)");
+            var cardsVisibles = seccion.querySelectorAll(".galeria__card:not(.galeria__card--oculta)");    // Selecciona todas las card que no (not) tengan la oculta
 
             // Si no hay cards visibles, ocultamos la sección; si hay, la mostramos
             if (cardsVisibles.length === 0) {
@@ -75,6 +75,7 @@ for (var i = 0; i < botonesFiltro.length; i++) {
                 seccion.style.display = "";
             }
         }
+        
 
     });
 }
