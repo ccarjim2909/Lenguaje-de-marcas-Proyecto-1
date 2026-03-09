@@ -3,6 +3,7 @@
 /* ============================= */
 
 :root {
+    --color-fondo: rgba(61, 32, 12, 0.85);
     --cafe-oscuro: #4b2e19;
     --cafe-medio: #7a5230;
     --cafe-claro: #bfa58a;
@@ -10,6 +11,22 @@
     --crema-suave: #f3e9db;
     --texto: #3b3028;
     --blanco: #ffffff;
+
+    /* */
+    --footer-fondo: #111;
+    --footer-texto: #eee;
+    --footer-borde: #333;
+    --footer-copy: #aaa;
+
+    --borde-suave: #ddd;
+    --input-borde: #ccc;
+
+    --sombra-suave: rgba(0,0,0,0.1);
+    --sombra-media: rgba(0,0,0,0.2);
+    --sombra-aside: rgba(0,0,0,0.08);
+
+    --hover-claro: rgba(255,255,255,0.2);
+    /* */
 
     --titulos: 'Georgia', serif;
     --texto-principal: 'Arial', sans-serif;
@@ -30,7 +47,7 @@ body {
 /* ============================= */
 
 .encabezado {
-    background: rgba(61, 32, 12, 0.85);
+    background: var(--color-fondo);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -73,7 +90,7 @@ body {
 }
 
 .navegacion__enlace:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background: var(--hover-claro);
     transform: scale(1.12);
     opacity: 0.9;
 }
@@ -84,8 +101,8 @@ body {
 /* ============================= */
 
 .pie {
-    background: #111;
-    color: #eee;
+    background: var(--footer-fondo);
+    color: var(--footer-texto);
     padding: 1.5rem 1rem;
 }
 
@@ -96,7 +113,7 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--footer-borde);
 }
 
 .pie__bloque--izquierda {
@@ -126,7 +143,7 @@ body {
 
 
 .pie__enlace {
-    color: #eee;
+    color: var(--footer-texto);
     text-decoration: none;
 }
 
@@ -139,7 +156,7 @@ body {
     padding-top: 1rem;
     text-align: center;
     font-size: 0.85rem;
-    color: #aaa;
+    color: var(--footer-copy);
 }
 
 
@@ -339,7 +356,7 @@ body {
 .servicios__imagen {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px var(--sombra-media);
 }
 
 .servicios__figcaption {
@@ -403,7 +420,7 @@ body {
 .sobre__imagen {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px var(--sombra-media);
 }
 
 .sobre__descripcion {
@@ -425,13 +442,13 @@ body {
 
 .sobre__tabla th{
     padding: 0.8rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--borde-suave);
 }
 
 
 .sobre__tabla td {
     padding: 0.8rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--borde-suave);
 }
 
 .sobre__tabla th {
@@ -514,7 +531,7 @@ body {
 .entrada__imagen {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px var(--sombra-media);
 }
 
 .entrada__leyenda {
@@ -611,7 +628,7 @@ body {
 .formulario__input {
     padding: 0.7rem;
     border-radius: 6px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--input-borde);
     background: var(--blanco);
 }
 
@@ -650,7 +667,7 @@ body {
 .contacto__imagen {
     width: 100%;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px var(--sombra-media);
 }
 
 .contacto__leyenda {
@@ -737,7 +754,7 @@ body {
     border-radius: 8px;
     padding: 1rem;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px var(--sombra-suave);
 }
 
 .galeria__imagen {
@@ -770,7 +787,7 @@ body {
     padding: 1.5rem;
     border-radius: 12px;
     height: fit-content;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 4px 8px var(--sombra-aside);
 
     position: sticky;
     top: 2rem;
@@ -892,10 +909,16 @@ body.modo-oscuro {
     color: var(--texto);
 }
 
+
+/* =================================== */
+/*  media del modo oscuro por defecto  */
+/* =================================== */
+
 @media (prefers-color-scheme: dark) {
     
 
     :root {
+        --color-fondo: #080808;
         --cafe-oscuro: #ffffff; 
         --cafe-medio: #b3b3b3;  
         --cafe-claro: #444444;  
@@ -912,7 +935,7 @@ body.modo-oscuro {
     }
 
     .encabezado {
-        background: #080808;
+        background: var(--color-fondo);
         color:var(--texto); 
     }
 
@@ -922,17 +945,17 @@ body.modo-oscuro {
 
     
     .pie {
-        background: #000;
+        background: #000000;
         color: #f5f5f5;
     }
     .pie__contenedor {
-        border-bottom: 1px solid #333; 
+        border-bottom: 1px solid #333333;
     }
     .pie__enlace {
         color: var(--cafe-medio); 
     }
     .pie__copy {
-        color: #888;
+        color: #888888;
     }
 
     .servicios__categoria {
@@ -954,7 +977,7 @@ body.modo-oscuro {
 
     .formulario__input {
         background: var(--blanco); 
-        border: 1px solid #555;
+        border: 1px solid #555555;
         color: var(--texto);
     }
     
