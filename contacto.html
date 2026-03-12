@@ -14,17 +14,20 @@
     <header class="encabezado">
         <h1 class="encabezado__titulo">Tardeos de Café</h1>
         <p class="encabezado__subtitulo">Tu rincón de sabor y charlita</p>
-
-        <nav class="navegacion">
-            <ul class="navegacion__lista">
-                <li class="navegacion__item"><a class="navegacion__enlace" href="./index.html" >Inicio</a></li>
-                <li class="navegacion__item"><a class="navegacion__enlace" href="./servicios.html">Menú</a></li>
-                <li class="navegacion__item"><a class="navegacion__enlace" href="./about.html">Nosotros</a></li>
-                <li class="navegacion__item"><a class="navegacion__enlace" href="./blog.html">Blog</a></li>
-                <li class="navegacion__item"><a class="navegacion__enlace" href="./contacto.html">Contacto</a></li>
-                <li class="navegacion__item"><a class="navegacion__enlace" href="./galeria.html">Galería</a></li>
-            </ul>
-        </nav>
+        <section class="encabezado__barra">
+            <span class="encabezado__barra-espacio"></span>
+            <nav class="navegacion">
+                <ul class="navegacion__lista">
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./index.html">Inicio</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./servicios.html">Menú</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./about.html">Nosotros</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./blog.html">Blog</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./contacto.html">Contacto</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+            <button class="modo-boton" type="button" aria-pressed="false" aria-label="Cambiar modo de color"></button>
+        </section>
     </header>
 
 
@@ -42,28 +45,34 @@
 
         <section class="contacto__formulario">
 
-            <form name="formulario" method="post" action="/send/" class="formulario">
+                        <form name="formulario" method="post" action="/send/" class="formulario">
 
 
                 <fieldset class="formulario__fieldset">
                     <legend class="formulario__leyenda">Datos personales</legend>
 
                     <p class="formulario__grupo">
-                        <label for="nombre">Nombre completo</label>
-                        <input type="text" id="nombre" name="nombre"
-                               class="formulario__input" placeholder="Tu nombre completo" required>
+                        <label>
+                            Nombre completo
+                            <input type="text" name="nombre"
+                                   class="formulario__input" placeholder="Tu nombre completo" required>
+                        </label>
                     </p>
 
                     <p class="formulario__grupo">
-                        <label for="email">Correo electrónico</label>
-                        <input type="email" id="email" name="email"
-                               class="formulario__input" placeholder="nombre@ejemplo.com" required>
+                        <label>
+                            Correo electrónico
+                            <input type="email" name="email"
+                                   class="formulario__input" placeholder="nombre@ejemplo.com" required>
+                        </label>
                     </p>
 
                     <p class="formulario__grupo">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" id="telefono" name="telefono"
-                               class="formulario__input" placeholder="ej: 612345678">
+                        <label>
+                            Teléfono
+                            <input type="tel" name="telefono"
+                                   class="formulario__input" placeholder="ej: 612345678">
+                        </label>
                     </p>
                 </fieldset>
 
@@ -72,25 +81,31 @@
                     <legend class="formulario__leyenda">Motivo del contacto</legend>
 
                     <p class="formulario__grupo">
-                        <label for="motivo">Motivo</label>
-                        <select id="motivo" name="motivo" class="formulario__input" required>
-                            <option value="">Selecciona una opción</option>
-                            <option value="reserva">Reserva de mesa o evento</option>
-                            <option value="sugerencia">Sugerencia o comentario</option>
-                            <option value="empleo">Empleo</option>
-                            <option value="proveedor">Proveedores</option>
-                        </select>
+                        <label>
+                            Motivo
+                            <select name="motivo" class="formulario__input" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="reserva">Reserva de mesa o evento</option>
+                                <option value="sugerencia">Sugerencia o comentario</option>
+                                <option value="empleo">Empleo</option>
+                                <option value="proveedor">Proveedores</option>
+                            </select>
+                        </label>
                     </p>
 
                     <p class="formulario__grupo">
-                        <label for="fecha">Fecha (si es una reserva)</label>
-                        <input type="date" id="fecha" name="fecha" class="formulario__input">
+                        <label>
+                            Fecha (si es una reserva)
+                            <input type="date" name="fecha" class="formulario__input">
+                        </label>
                     </p>
 
                     <p class="formulario__grupo">
-                        <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" name="mensaje" class="formulario__input"
-                                  placeholder="Escribe tu mensaje..." required></textarea>
+                        <label>
+                            Mensaje
+                            <textarea name="mensaje" class="formulario__input"
+                                      placeholder="Escribe tu mensaje..." required></textarea>
+                        </label>
                     </p>
                 </fieldset>
 
@@ -99,8 +114,10 @@
                     <legend class="formulario__leyenda">Confirmación</legend>
 
                     <p class="formulario__grupo formulario__grupo--checkbox">
-                        <input type="checkbox" id="privacidad" name="privacidad" required>
-                        <label for="privacidad">Acepto la <a href="politica.html">política de privacidad</a></label>
+                        <label>
+                            <input type="checkbox" name="privacidad" required>
+                            Acepto la <a href="politica.html">política de privacidad</a>
+                        </label>
                     </p>
 
                     <p class="formulario__botones">
@@ -166,5 +183,9 @@
 
 </body>
 </html>
+
+
+
+
 
 

@@ -167,9 +167,40 @@ Se han incorporado transiciones suaves y una animación sutil para enriquecer la
 
 ---
 
-📅 **Autor:** Cristian Carretero Jiménez  
-📘 **Asignatura:** Lenguaje de Marcas – Proyecto 1  
-📍 **Año:** 2025  
+📅 
+🚀 Informe de Mejoras y Funcionalidad (Fase 3)
+------------------------------------------------
+
+En esta fase se han incorporado mejoras que no estaban en la fase anterior, centradas en **responsive**, **nueva página funcional** y **lógica JavaScript**.
+
+### 1\. Responsive Real y Ajustes Mobil
+
+-   **Media queries adicionales:** Se añadieron breakpoints para escritorio y móvil para adaptar rejillas, paddings y tipografías sin cambiar la estructura general.
+-   **Encabezado adaptable:** La barra del header se reorganiza en pantallas pequeñas, manteniendo el botón de modo y la navegación accesible.
+-   **Rejillas flexibles:** Se ajustaron las rejillas (`.bienvenida`, `.blog__rejilla`, `.rejilla-2`, `.galeria`) para que pasen de 2/3 columnas a 1 columna en móvil.
+
+### 2\. Nueva Página `anecdota.html`
+
+-   Se creó una página independiente con el mismo estilo general del sitio.
+-   Incluye un **formulario de anécdotas** (título, autor, fecha, imagen opcional y texto).
+-   El formulario está conectado con el blog para que la anécdota aparezca como un nuevo artículo.
+
+### 3\. Funcionalidad JavaScript Añadida
+
+-   **Filtro de galería:** Lógica para mostrar/ocultar cards según la categoría seleccionada, con botones activos y secciones que se ocultan si quedan vacías.
+-   **Modo claro/oscuro manual:** Botón de toggle que fuerza el tema, guarda la preferencia en `localStorage` y respeta la preferencia inicial del sistema.
+-   **Anécdotas en blog:**  
+    - Se guardan en `localStorage`.  
+    - Se generan dinámicamente los artículos al cargar `blog.html`.  
+    - El formulario de `anecdota.html` crea el contenido y redirige de vuelta al blog.
+
 
 ---
+**Autor:** Cristian Carrasco Jiménez  
+📘 **Asignatura:** Lenguaje de Marcas – Proyecto 1  
+📍 **Año:** 2025/26  
+
+---
+
+
 

@@ -13,23 +13,25 @@
     <header class="encabezado">
         <h1 class="encabezado__titulo">Tardeos de Café</h1>
         <p class="encabezado__subtitulo">Tu rincón de sabor y charlita</p>
-
-        <nav class="navegacion">
-            <ul class="navegacion__lista">
-                <li class="navegacion__item"><a href="./index.html" class="navegacion__enlace">Inicio</a></li>
-                <li class="navegacion__item"><a href="./servicios.html" class="navegacion__enlace">Menú</a></li>
-                <li class="navegacion__item"><a href="./about.html" class="navegacion__enlace">Nosotros</a></li>
-                <li class="navegacion__item"><a href="./blog.html" class="navegacion__enlace">Blog</a></li>
-                <li class="navegacion__item"><a href="./contacto.html" class="navegacion__enlace">Contacto</a></li>
-                <li class="navegacion__item"><a href="./galeria.html" class="navegacion__enlace">Galería</a></li>
-            </ul>
-        </nav>
+        <section class="encabezado__barra">
+            <span class="encabezado__barra-espacio"></span>
+            <nav class="navegacion">
+                <ul class="navegacion__lista">
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./index.html">Inicio</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./servicios.html">Menú</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./about.html">Nosotros</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./blog.html">Blog</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./contacto.html">Contacto</a></li>
+                    <li class="navegacion__item"><a class="navegacion__enlace" href="./galeria.html">Galería</a></li>
+                </ul>
+            </nav>
+            <button class="modo-boton" type="button" aria-pressed="false" aria-label="Cambiar modo de color"></button>
+        </section>
     </header>
 
 
     <main class="blog">
 
-        <!-- ENCABEZADO DEL BLOG -->
         <header class="blog__intro">
             <h2 class="blog__titulo">Blog del Tardeos de Café</h2>
             <p class="blog__descripcion">
@@ -38,10 +40,8 @@
             </p>
         </header>
 
-        <!-- LISTA DE ENTRADAS -->
         <section class="blog__rejilla">
 
-            <!-- ARTÍCULO 1 -->
             <article class="entrada">
                 <figure class="entrada__figura">
                     <img src="./assets/images/emily.png" alt="Emily Armstrong cantando" class="entrada__imagen">
@@ -59,7 +59,6 @@
                 </p>
             </article>
 
-            <!-- ARTÍCULO 2 -->
             <article class="entrada">
                 <figure class="entrada__figura">
                     <img src="./assets/images/lluvia_terraza.png" alt="Clientes viendo la lluvia" class="entrada__imagen">
@@ -79,7 +78,6 @@
                 </p>
             </article>
 
-            <!-- ARTÍCULO 3 -->
             <article class="entrada">
                 <figure class="entrada__figura">
                     <img src="./assets/images/concurso.png" alt="Mesa con postres caseros" class="entrada__imagen">
@@ -100,10 +98,14 @@
             </article>
 
         </section>
+
+        <section class="blog__cta">
+            <a class="blog__cta-boton" href="./anecdota.html">Añade tu anecdota</a>
+        </section>
     </main>
 
 
-    <!-- FOOTER -->
+
     <footer class="pie">
         <section class="pie__contenedor">
         
@@ -131,4 +133,7 @@
 
 </body>
 </html>
+
+
+
 
