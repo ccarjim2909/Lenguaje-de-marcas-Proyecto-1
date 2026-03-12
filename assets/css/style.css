@@ -1,3 +1,8 @@
+/* 
+localStorage.clear(); 
+*/
+
+
 /* ============================= */
 /*         ROOT Y RESET          */
 /* ============================= */
@@ -1349,4 +1354,5 @@ body.modo-oscuro .bienvenida__boton:hover {
         transform: translateX(1rem);
     }
 }
+
 
