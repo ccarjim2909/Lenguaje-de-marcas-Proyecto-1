@@ -167,8 +167,7 @@ Se han incorporado transiciones suaves y una animación sutil para enriquecer la
 
 ---
 
-📅 
-🚀 Informe de Mejoras y Funcionalidad (Fase 3)
+📅 🚀 Informe de Mejoras y Funcionalidad (Fase 3)
 ------------------------------------------------
 
 En esta fase se han incorporado mejoras que no estaban en la fase anterior, centradas en **responsive**, **nueva página funcional** y **lógica JavaScript**.
@@ -201,6 +200,7 @@ En esta fase se han incorporado mejoras que no estaban en la fase anterior, cent
 📍 **Año:** 2025/26  
 
 ---
+
 
 
 
