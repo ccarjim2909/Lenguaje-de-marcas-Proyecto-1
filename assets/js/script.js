@@ -5,7 +5,7 @@ localStorage.clear();
 
 
 /* ============================= */
-/*         galeria filtro        */   /*nuevo*/
+/*         galeria filtro        */   
 /* ============================= */
 
 
@@ -15,22 +15,22 @@ const todasLasCards = document.querySelectorAll(".galeria__card");
 
 const todasLasSecciones = document.querySelectorAll(".galeria__seccion");
 
-// Recorremos cada botón
+
 for (let i = 0; i < botonesFiltro.length; i++) {
     const boton = botonesFiltro[i];
 
-    // Añadimos evento click a cada botón
+    // evento de cada boton
     boton.addEventListener("click", function() {
 
-        // Quitamos clase activo de todos los botones
+        // quito clase activo de todos los botones
         for (const boton of botonesFiltro) {
             boton.classList.remove("galeria__filtro-boton--activo");
         }
 
-        // Ponemos clase activo al botón que se clicó
+
         this.classList.add("galeria__filtro-boton--activo");
 
-        // Definimos qué filtro aplicamos
+        // defino el filtro
         let filtro = "";
 
         if (this.classList.contains("filtro-todos")) {
@@ -49,7 +49,7 @@ for (let i = 0; i < botonesFiltro.length; i++) {
             filtro = "bebidas";
         }
 
-        // Recorremos todas las cards
+
         for (const card of todasLasCards) {
             if (filtro === "todos") {
                 card.classList.remove("galeria__card--oculta");
@@ -68,12 +68,12 @@ for (let i = 0; i < botonesFiltro.length; i++) {
             }
         }
 
-        // Recorremos todas las secciones para ocultar las que no tengan cards visibles
+        // recorro todas las secciones para ocultar las que no tengan cards visibles
         for (const seccion of todasLasSecciones) {
-            // Buscamos las cards visibles dentro de esta sección
-            const cardsVisibles = seccion.querySelectorAll(".galeria__card:not(.galeria__card--oculta)");    // Selecciona todas las card que no (not) tengan la oculta
+            // busco las cards visibles dentro de esta sección
+            const cardsVisibles = seccion.querySelectorAll(".galeria__card:not(.galeria__card--oculta)");    // selecciona todas las card que no (not) tengan la oculta
 
-            // Si no hay cards visibles, ocultamos la sección; si hay, la mostramos
+            // si no hay cards visibles, ocultamos la sección; si hay, la mostramos
             if (cardsVisibles.length === 0) {
                 seccion.style.display = "none";
             } else {
@@ -95,57 +95,30 @@ const body = document.body;
 
 if (botonModo != null) {
 
-    function aplicarModo(modoElegido) {
+    function aplicarModo(modo) {
 
         body.classList.remove("modo-claro");
         body.classList.remove("modo-oscuro");
 
-        body.classList.add(modoElegido);
+        body.classList.add(modo);
 
-        localStorage.setItem("modo", modoElegido);
-
-        let esModoOscuro = false;
-
-        if (modoElegido == "modo-oscuro") {
-            esModoOscuro = true;
-        }
-
-        if (esModoOscuro == true) {
-            botonModo.setAttribute("aria-pressed", "true");
-            botonModo.setAttribute("aria-label", "Cambiar a modo claro");
-            botonModo.setAttribute("title", "Cambiar a modo claro");
-        } else {
-            botonModo.setAttribute("aria-pressed", "false");
-            botonModo.setAttribute("aria-label", "Cambiar a modo oscuro");
-            botonModo.setAttribute("title", "Cambiar a modo oscuro");
-        }
+        localStorage.setItem("modo", modo);
     }
 
-    function inicializarModo() {
+    function iniciarModo() {
 
         const modoGuardado = localStorage.getItem("modo");
 
-        if (modoGuardado == "modo-claro" || modoGuardado == "modo-oscuro") {
-
+        if (modoGuardado != null) {
             aplicarModo(modoGuardado);
-
         } else {
-
-            const prefiereOscuro = window.matchMedia("(prefers-color-scheme: dark)").matches;
-
-            if (prefiereOscuro == true) {
-                aplicarModo("modo-oscuro");
-            } else {
-                aplicarModo("modo-claro");
-            }
+            aplicarModo("modo-claro");
         }
     }
 
     botonModo.addEventListener("click", function () {
 
-        const tieneModoOscuro = body.classList.contains("modo-oscuro");
-
-        if (tieneModoOscuro == true) {
+        if (body.classList.contains("modo-oscuro")) {
             aplicarModo("modo-claro");
         } else {
             aplicarModo("modo-oscuro");
@@ -153,7 +126,7 @@ if (botonModo != null) {
 
     });
 
-    inicializarModo();
+    iniciarModo();
 }
 
 
